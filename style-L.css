@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background: #4f749a;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+/* ── Header / Nav (igual al index) ── */
+    header {
+      background: var(--verde);
+      color: #fff;
+      padding: 0;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 0.01em;
+      padding: 1.1rem 2rem 0.6rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #142745;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      color: #d4ede2;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.875rem;
+      padding: 0.65rem 1.1rem;
+      transition: background 0.15s, color 0.15s;
+      border-bottom: 3px solid transparent;
+    }
+
+    nav ul li a:hover {
+      background: #3498db;
+      color: #fff;
+    }
+
+    nav ul li a.activo {
+      background: #1a305c;
+      color: #fff;
+      border-bottom: 3px solid #f0c040;
+    }
+
+    /* ── Main ── */
+    main {
+      flex: 1;
+      max-width: 960px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 1.25rem 3rem;
+    }
+
+    main > h2 {
+      font-size: 1.35rem;
+      color: var(--verde);
+      border-bottom: 2px solid var(--verde-l);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Perfil layout ── */
+    .perfil-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+hr {
+    border: none;
+    height: 2px;
+    background: #d1d5db;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Formulario */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 320px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(65, 82, 119, 0.5);
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #50608c;
+}
+
+/* Links */
+a {
+    color: #0a0f1a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #364d7c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

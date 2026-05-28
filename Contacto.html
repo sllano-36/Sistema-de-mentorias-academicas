@@ -1,57 +1,100 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contáctenos</title>
+
+    <link rel="stylesheet" href="style-C.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>Contáctenos</h1>
     </header>
 
+    <!-- MAIN -->
     <main>
 
-        <form>
+        <section class="contenedor-formulario">
 
-            <label>Nombre:</label>
-            <input type="text" required>
+            <form>
 
-            <br><br>
+                <!-- Nombre -->
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
 
-            <label>Email:</label>
-            <input type="email">
+                    <input
+                        type="text"
+                        id="nombre"
+                        required>
+                </div>
 
-            <br><br>
+                <!-- Email -->
+                <div class="campo">
+                    <label for="email">Email:</label>
 
-            <label>Mensaje:</label>
+                    <input
+                        type="email"
+                        id="email">
+                </div>
 
-            <textarea rows="5" cols="30"></textarea>
-            <br><br>
+                <!-- Mensaje -->
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
 
-            <label>Opiniones: </label>
+                    <textarea
+                        id="mensaje"
+                        rows="5"></textarea>
+                </div>
 
-            <textarea name="" id=""></textarea>
+                <!-- Opiniones -->
+                <div class="campo">
+                    <label for="opiniones">Opiniones:</label>
 
+                    <textarea
+                        id="opiniones"
+                        rows="4"></textarea>
+                </div>
 
-            <br><br>
+                <!-- Botón -->
+                <button type="submit">
+                    Enviar
+                </button>
 
-            <button type="submit">Enviar</button>
+                <!-- Link volver -->
+                <div class="volver-contenedor">
 
-        </form>
+                    <a href="index.html" class="volver">
+                        ← Volver al inicio
+                    </a>
 
-          <br><br>
+                </div>
 
-        <a href="index.html">vuelve al inicio</a>
+            </form>
+
+        </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>Correo: mentorias@cesde.edu</p>
+
+        <p>Contacto: mentorias@cesde.edu</p>
+
+        <p>Teléfono: 3152050549</p>
+
+        <p>© 2026 Sistema de Mentorías Académicas</p>
+
     </footer>
 
 </body>
 
 </html>
+```

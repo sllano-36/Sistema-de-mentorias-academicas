@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Perfil — Sistema de Mentorías Académicas</title>
+  <link rel="stylesheet" href="style-P.css">
+   
+</head>
+
+<body>
+
+  <!-- Header idéntico al index -->
+  <header>
+    <h1>Sistema de mentorias academicas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Registro.html">Registro</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="perfil.html" class="activo">Gestion de perfil</a></li>
+        <li><a href="Recuperar.html">Recuperar contraseña</a></li>
+        <li><a href="Contacto.html">Contactenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Gestión de Perfil</h2>
+
+    <div class="perfil-grid">
+
+      <!-- ── Tarjeta lateral ── -->
+      <aside>
+        <div class="tarjeta-lateral">
+          <div class="tarjeta-cabecera">
+            <div class="avatar-circulo">AR</div>
+            <div class="nombre">Andres Rojas</div>
+            <div class="rol">Mentor Académico</div>
+          </div>
+
+          <div class="tarjeta-cuerpo">
+            <div class="info-item">
+              <span class="etiqueta">Materia</span>
+              <span class="valor">Matemáticas</span>
+            </div>
+            <div class="info-item">
+              <span class="etiqueta">Horario</span>
+              <span class="valor">Lunes 5pm – 7pm</span>
+            </div>
+            <div class="info-item">
+              <span class="etiqueta">Correo</span>
+              <span class="valor">androjas@cesde.edu</span>
+            </div>
+            <div class="info-item">
+              <span class="etiqueta">Teléfono</span>
+              <span class="valor">310 415 2900</span>
+            </div>
+            <div class="info-item">
+              <span class="etiqueta">Estado</span>
+              <span class="estado-badge">&#x25CF; Activo</span>
+            </div>
+
+            <div class="stats-mini">
+              <div class="stat-box">
+                <div class="stat-num">24</div>
+                <div class="stat-etq">Sesiones</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">11</div>
+                <div class="stat-etq">Alumnos</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">4.8</div>
+                <div class="stat-etq">Calificación</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">98%</div>
+                <div class="stat-etq">Asistencia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ── Columna derecha ── -->
+      <div class="columna-derecha">
+
+        <!-- Datos personales -->
+        <div class="seccion">
+          <h3>Datos Personales</h3>
+          <div class="form-grupo">
+            <div class="campo">
+              <label>Nombre</label>
+              <input type="text" value="Andres" />
+            </div>
+            <div class="campo">
+              <label>Apellido</label>
+              <input type="text" value="Rojas" />
+            </div>
+            <div class="campo">
+              <label>Correo electrónico</label>
+              <input type="email" value="androjas@cesde.edu" />
+            </div>
+            <div class="campo">
+              <label>Teléfono</label>
+              <input type="tel" value="310 415 2900" />
+            </div>
+            <div class="campo">
+              <label>Semestre</label>
+              <select>
+                <option>4° semestre</option>
+                <option>5° semestre</option>
+                <option>6° semestre</option>
+                <option>7° semestre</option>
+                <option>8° semestre</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label>Rol</label>
+              <select>
+                <option selected>Mentor</option>
+                <option>Aprendiz</option>
+                <option>Ambos</option>
+              </select>
+            </div>
+            <div class="campo ancho-completo">
+              <label>Presentación / Sobre mí</label>
+              <textarea rows="3">Estudiante de Ingeniería de Sistemas con alto rendimiento en Matemáticas. Me apasiona ayudar a mis compañeros a entender cálculo y álgebra lineal de forma práctica.</textarea>
+            </div>
+          </div>
+          <div class="botones-fila">
+            <button class="btn btn-guardar">Guardar cambios</button>
+            <button class="btn btn-cancelar">Cancelar</button>
+            <button class="btn btn-peligro">Eliminar cuenta</button>
+          </div>
+        </div>
+
+        <!-- Materias -->
+        <div class="seccion">
+          <h3>Materias que puedo impartir</h3>
+          <div class="materias-grid">
+            <label class="materia-opcion">
+              <input type="checkbox" checked /> Matemáticas
+            </label>
+            <label class="materia-opcion">
+              <input type="checkbox" /> Inglés
+            </label>
+            <label class="materia-opcion">
+              <input type="checkbox" /> Física
+            </label>
+            <label class="materia-opcion">
+              <input type="checkbox" /> Química
+            </label>
+            <label class="materia-opcion">
+              <input type="checkbox" /> Español
+            </label>
+          </div>
+          <div class="botones-fila">
+            <button class="btn btn-guardar">Actualizar materias</button>
+          </div>
+        </div>
+
+        <!-- Horarios -->
+        <div class="seccion">
+          <h3>Disponibilidad de Horarios</h3>
+          <table class="horarios-tabla">
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>8am – 10am</th>
+                <th>10am – 12m</th>
+                <th>3pm – 5pm</th>
+                <th>5pm – 7pm</th>
+                <th>7pm – 9pm</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="slot-ocupado">Ocupado</span></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Martes</td>
+                <td>—</td>
+                <td><span class="slot-libre">Libre</span></td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Miércoles</td>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="slot-libre">Libre</span></td>
+                <td>—</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Jueves</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="slot-libre">Libre</span></td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td><span class="slot-libre">Libre</span></td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="botones-fila">
+            <button class="btn btn-guardar">Guardar horario</button>
+          </div>
+        </div>
+
+        <!-- Evaluaciones -->
+        <div class="seccion">
+          <h3>Evaluaciones recibidas</h3>
+          <div class="resenas-lista">
+            <div class="resena">
+              <div class="resena-avatar ra1">LP</div>
+              <div class="resena-cuerpo">
+                <div class="resena-cabeza">
+                  <span class="resena-nombre">Laura Pérez</span>
+                  <span class="estrellas">★★★★★</span>
+                  <span class="resena-fecha">Abr 2026</span>
+                </div>
+                <div class="resena-texto">Andres explica muy bien los temas de cálculo diferencial. Las sesiones son organizadas y siempre resuelve todas las dudas con paciencia.</div>
+              </div>
+            </div>
+            <div class="resena">
+              <div class="resena-avatar ra2">CM</div>
+              <div class="resena-cuerpo">
+                <div class="resena-cabeza">
+                  <span class="resena-nombre">Carlos Mora</span>
+                  <span class="estrellas">★★★★☆</span>
+                  <span class="resena-fecha">Mar 2026</span>
+                </div>
+                <div class="resena-texto">Muy buen mentor, puntual y con dominio del tema. Mejoré bastante en álgebra lineal gracias a sus ejercicios prácticos.</div>
+              </div>
+            </div>
+            <div class="resena">
+              <div class="resena-avatar ra3">SV</div>
+              <div class="resena-cuerpo">
+                <div class="resena-cabeza">
+                  <span class="resena-nombre">Sara Valencia</span>
+                  <span class="estrellas">★★★★★</span>
+                  <span class="resena-fecha">Feb 2026</span>
+                </div>
+                <div class="resena-texto">Excelente experiencia. Andres tiene una metodología clara y hace que los temas difíciles sean más fáciles de entender.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cambiar contraseña -->
+        <div class="seccion">
+          <h3>Cambiar Contraseña</h3>
+          <div class="form-grupo">
+            <div class="campo ancho-completo">
+              <label>Contraseña actual</label>
+              <input type="password" placeholder="••••••••" />
+            </div>
+            <div class="campo">
+              <label>Nueva contraseña</label>
+              <input type="password" placeholder="••••••••" />
+            </div>
+            <div class="campo">
+              <label>Confirmar nueva contraseña</label>
+              <input type="password" placeholder="••••••••" />
+            </div>
+          </div>
+          <div class="botones-fila">
+            <button class="btn btn-guardar">Actualizar contraseña</button>
+            <button class="btn btn-cancelar">Cancelar</button>
+          </div>
+        </div>
+
+      </div><!-- fin columna-derecha -->
+    </div><!-- fin perfil-grid -->
+  </main>
+
+  <!-- Footer idéntico al index -->
+  <footer>
+    <p>Contacto: mentorias@cesde.edu</p>
+    <p>Teléfono: 3152050549</p>
+    <p>© 2026 Sistema de Mentorías Académicas</p>
+  </footer>
+
+</body>
+</html>
